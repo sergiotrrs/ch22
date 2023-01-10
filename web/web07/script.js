@@ -17,5 +17,4 @@ function changeColorByClass(color){
     for (let index = 0; index < collection.length; index++) {        
         collection[index].style.color = color;
     }
-
 }
