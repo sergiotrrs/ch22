@@ -122,7 +122,8 @@ function factoriaConCicloFor( a ){
 }
 
 function factorialConRecursion( a ){
-    if( a < 1) return 1;
+    if( a < 1) 
+        return 1;
     return a * factorialConRecursion( a - 1 )
 }
 
@@ -131,5 +132,19 @@ console.log("Factorial 5 = " + factoriaConCicloFor(5) ); //120
 console.log("Factorial 3 = " + factorialConRecursion(3) ); //6
 console.log("Factorial 5 = " + factorialConRecursion(5) ); //120
 
+// Hacer una recursión que muestre en consola una saludo como
+/*
+Saludo 1
+Saludo 2
+Saludo 3 ... Saludo 10
 
+saludo(10);
+*/
 
+function saludo( cantidad, iteracion=1 ){
+    console.log("saludo" + iteracion);
+    if( iteracion >= cantidad) 
+        return 1;
+    return saludo( cantidad, iteracion+1 );
+}
+saludo(10);
