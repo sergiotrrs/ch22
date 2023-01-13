@@ -168,13 +168,11 @@ function validaMes( mes ){
      console.log("error del mes");
 }
 
-const respuestaUsuario = parseInt(prompt("Ingresa el mes"));
+const respuestaUsuario =12 //parseInt(prompt("Ingresa el mes"));
 validaMes(respuestaUsuario);
 
 //---------Refactorizar, usando un operador ternario
 function factorial( number ){
-    if( number < 1) 
-        return 1;
-    return number * factorial( number - 1 )
+    const result = number<1 ? 1 : number * factorial(number);
 }
 console.log("Factorial 5 = " + factorial(5) ); //120
