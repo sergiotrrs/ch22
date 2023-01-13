@@ -121,16 +121,17 @@ function factoriaConCicloFor( a ){
 	return total;
 }
 
-function factorialConRecursion( a ){
-    if( a < 1) 
+function factorial( number ){
+    if( number < 1) 
         return 1;
-    return a * factorialConRecursion( a - 1 )
+    return number * factorial( number - 1 )
 }
+
 
 console.log("Factorial 3 = " + factoriaConCicloFor(3) ); //6
 console.log("Factorial 5 = " + factoriaConCicloFor(5) ); //120
-console.log("Factorial 3 = " + factorialConRecursion(3) ); //6
-console.log("Factorial 5 = " + factorialConRecursion(5) ); //120
+console.log("Factorial 3 = " + factorial(3) ); //6
+console.log("Factorial 5 = " + factorial(5) ); //120
 
 // Hacer una recursión que muestre en consola una saludo como
 /*

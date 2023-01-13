@@ -150,4 +150,31 @@ console.log(`Switch - ${nombrePersona} tu reloj es ${ marcaReloj}`);
     mes 9, 10, 11 = Otoño;
 
     Usar switch.
+    La estación del año es invierno
+    Mes: 1
+    En enero la estación del año es invierno
+    mes: 6
+    En junio la estación del año es verano
 */
+
+function buscaEstacionYMes (mes){
+    //siwtch
+    return "mensaje";
+}
+
+function validaMes( mes ){
+    if(mes>=1 && mes<=12) buscaEstacionYMes(mes);
+    else
+     console.log("error del mes");
+}
+
+const respuestaUsuario = parseInt(prompt("Ingresa el mes"));
+validaMes(respuestaUsuario);
+
+//---------Refactorizar, usando un operador ternario
+function factorial( number ){
+    if( number < 1) 
+        return 1;
+    return number * factorial( number - 1 )
+}
+console.log("Factorial 5 = " + factorial(5) ); //120
