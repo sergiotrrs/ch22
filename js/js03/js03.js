@@ -173,7 +173,6 @@ validaMes(respuestaUsuario);
 
 //---------Refactorizar, usando un operador ternario
 function factorial( number ){
-    const result = number<1 ? 1 : number * factorial(number-1);
-    return result;
+    return number<1 ? 1 : number * factorial(number-1);
 }
 console.log("Factorial 5 = " + factorial(5) ); //120
