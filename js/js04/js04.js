@@ -162,4 +162,69 @@ for (let fila = 0 ; fila< participantes.length; fila++){
     } 
 }
 
+//Ciclo while
+/*
+ sintaxis:
+    while ( condicion_verdadera) instrucción;
 
+    while ( condicion_verdadera){
+        instrucciones;
+    } 
+
+*/
+let numIteracion = 0;
+/* while ( confirm("Quieres seguir iterando? ")  ){
+    console.log("Iteración n. " + numIteracion++);
+}
+ */
+// Preguntar del 1 al 10 y saber si es el número que pensó el usuario
+let number = 1;
+/* while( !confirm(`${number} es tu numero?`) ) {
+    number++;    
+}
+ */
+number = 0;
+/* while( !confirm(`${++number} es tu numero?`) );
+console.log("Tu número es el " + number);
+*/
+
+// ciclo do-while
+/*
+ Sintaxis:
+     do {
+        instrucciones;
+     } while( condicion_verdadera);
+*/
+let valor = 10;
+while( valor < 5 ){
+    console.log("while " + valor); // nada
+    valor++;
+} 
+
+valor = 10;
+do {
+    console.log("do while " + valor); // 10
+    valor++;    
+} while( valor < 5 );
+
+/**
+ * FIFO: first input first output
+ * LIFO: last input first output
+ * 
+ */
+const alimentosPerecederos = [];
+//Agregando una caja.
+// Usando FIFO
+alimentosPerecederos.push("manzanas lunes");
+alimentosPerecederos.push("manzanas miércoles");
+//Sacando manzanas del lunes
+console.log("Sacando a la venta " + alimentosPerecederos.shift()); //lunes
+console.log("Sacando a la venta " + alimentosPerecederos.shift()); //miércoles
+
+//Usando LIFO
+//Tenemos una ferretería
+const productos = ["desarmadores","cemento"];
+// agrego luces navideñas en diciembre
+productos.push("luces navideñas");
+console.log("Sacando a la venta " + productos.pop() );
+console.log("Sacando a la venta " + productos.pop() );
