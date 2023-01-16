@@ -86,5 +86,80 @@ for (let arma of armasCh22)
 for( let i = armasCh22.length -1; i>=0 ; i--) 
     console.log("Arma: " + armasCh22[i]);
     
+// Para el ciclo for no es necesario indicar en inicio, 
+// la comparación, la expresión final
+let iteracion = 0;
+for ( ; ; ){
+ console.log("valor de i " + iteracion);
+ if (iteracion === 10) break;
+ iteracion++;
+}
+
+// La instrucción break rompe con la iteración.
+// La instrucción continue continua con la sig. iteración
+for (let i=0; i<=10; i++){
+    if (i === 5 ) break;
+    console.log("For con break: " + i); //0, 1 ,2 ,3 ,4
+}
+
+for (let i=0; i<=10; i++){
+    //instrucciones;
+    if (i === 5 ) continue;
+    console.log("For con continue: " + i); // 0, 1 , 2, 3, 4,     6, 7, 8, 9, 10
+}
+     //[ [] , [] , [] ]
+const participantes = [ 
+    [ "José"   , "María"   ,  "Pedro" ] , // Ch1   Fila 0
+    [ "Tan"    , "Javi"    , "Andrea",  "Santi" ] , //Ch2  Fila1
+    [ "Melanie", "Pavel"  ] // Ch3  Fila2
+];
+                                                    //Feliz Cumpleaños
+                                                          //   F   C
+console.log("Persona Ch3(f2) 2a persona(c1) " +  participantes[2][1] );
+console.log("Persona Ch2(f1) 1a persona(c0) " +  participantes[1][0] );
+console.log("Persona Ch1(f0) 3a persona(c2) " +  participantes[0][2] );
+
+for (fila = 0 ; fila< participantes.length; fila++){
+    console.log(participantes[fila]); //Iterando las filas
+    for (columna = 0 ; columna< participantes[fila].length ; columna++ ){
+        console.log( participantes[fila][columna] );
+    }
+}
+
+// Usando break en ciclos aninados
+// Dejar de mostrar los nombre, cuando se encuentre a Tan
+
+//Usando una variable como bandera
+let continuarIteraciones = true;
+for (fila = 0 ; fila< participantes.length; fila++){   
+        for (columna = 0 ; columna< participantes[fila].length ; columna++ ){
+            console.log(`[${fila}][${columna}]`);
+            if ( continuarIteraciones)
+                console.log("Uso de break " + participantes[fila][columna] );
+            if ( participantes[fila][columna] === "Tan") continuarIteraciones= false;
+        }   
+}
+
+//Usando Break
+clicloFila:
+for (let fila = 0 ; fila< participantes.length; fila++){
+    cicloColumna:
+    for (let columna = 0 ; columna< participantes[fila].length ; columna++ ){
+        console.log(`[${fila}][${columna}]`);
+        console.log("Uso de break " + participantes[fila][columna] );
+        if ( participantes[fila][columna] === "Tan") break clicloFila;
+    } 
+}
+
+//Usando continue
+clicloFila:
+for (let fila = 0 ; fila< participantes.length; fila++){
+    cicloColumna:
+    for (let columna = 0 ; columna< participantes[fila].length ; columna++ ){
+        if ( participantes[fila][columna] === "Javi") continue clicloFila;
+        console.log(`[${fila}][${columna}]`);
+        console.log("Uso de continue " + participantes[fila][columna] );
+    } 
+}
 
 
