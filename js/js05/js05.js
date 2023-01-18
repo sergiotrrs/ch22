@@ -144,19 +144,65 @@ let edadPersona = 18;
 mensaje = "Puede votar";
 console.log( "La persona puede votar? " +  (edadPersona >= 18 && mensaje)  );
 
-// OP1 || OP3  Si OP1 = true, se realiza el resultado de OP1
+// OP1 || OP2  Si OP1 = true, se realiza el resultado de OP1
 
 let isOnline = true;
 let isActive = true;
 
 if( isOnline){
     if ( isActive)
-        console.log("Estamos in");
+        console.log("Estamos autorizado");
 }
 
 if ( isOnline && isActive)
-    console.log("Estamos in");
+    console.log("Estamos autorizados");
 
-isOnline && isActive && console.log("Estamos in");
+isOnline && isActive && console.log("Estamos autorizados");
+
+let edadMiSobrina = 15;
+console.log(  edadMiSobrina>18 && "Puede votar"  );
+let numDeQuesadillasAComer = "3";
+let guisado = "Huitlacoche";
+
+console.log("Montse comerá quesadilla de: " +  (numDeQuesadillasAComer&&guisado) );
+
+let nombreConductor = "Pax";
+let tieneLicenciaConducir = true;
+let edadConductor = 50;
+
+const seRentaAuto = nombreConductor && tieneLicenciaConducir && edadConductor<60;
+console.log("Resultado" + seRentaAuto);
+
+const datosQuesadilla = {
+    tortilla: "maiz",
+    tieneQueso: true,
+    pica: "poquito"
+}
+
+const picaLaQuesadilla = datosQuesadilla.pica && "Pica mucho";
+console.log(picaLaQuesadilla);
 
 
+/**
+ * Selecciona la operacion y realiza el callback de la función.
+ * @param {function} operacion callback de la función
+ */
+function escogiendoOperacion(fncOperacion) {
+
+}
+
+escogiendoOperacion()
+
+const obtenerValoresDeEntrada = () =>{
+    const a = document.getElementById("a").value;
+    const b = document.getElementById("b").value;
+    return [a , b]; // { a , b}
+}
+
+
+const suma = () => {
+    const [valorA , valorB ] = obtenerValoresDeEntrada();
+    // const {valorA , valorB } = obtenerValoresDeEntrada();
+    document.getElementById("r").innerHTML= parseInt ( valorA) + parseInt( valorB);
+
+}
