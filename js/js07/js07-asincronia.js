@@ -43,3 +43,24 @@ desarrolloAsincrono(6000);
 setIntervalAsincrono(2000);
 stopIntervalAsincrono();
 despedida(); //esta instrucción no espera a que finalice la función asíncrona
+
+
+const refStartInterval = document.getElementById("start-interval");
+const refStopInterval = document.getElementById("stop-interval");
+
+let idCounter;
+refStartInterval.addEventListener('click', (event)=>{
+    console.log(event);
+    let counter=0;
+    refStartInterval.disabled = true;
+    refStopInterval.disabled = false;
+    idCounter = setInterval( ()=>console.log(`Contador ${++counter}`), 1000 );
+} );
+
+function stopCounter(event){ //event
+    console.log(event);
+    console.log("Se detiene el contador");
+    clearInterval(idCounter);
+    refStartInterval.disabled = false;
+    refStopInterval.disabled = true;
+}
