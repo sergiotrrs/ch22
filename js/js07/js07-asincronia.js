@@ -57,8 +57,8 @@ refStartInterval.addEventListener('click', (event)=>{
     idCounter = setInterval( ()=>console.log(`Contador ${++counter}`), 1000 );
 } );
 
-function stopCounter(event){ //event
-    console.log(event);
+function stopCounter(e){ //event
+    console.log(e);
     console.log("Se detiene el contador");
     clearInterval(idCounter);
     refStartInterval.disabled = false;
