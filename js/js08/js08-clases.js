@@ -30,7 +30,9 @@ class Usuario {
 
     imprimirDatos(){
        let listadoProductos = "";
-        if( this.#carritoCompras.length > 0){
+       this.#carritoCompras
+        .forEach( producto=> listadoProductos+= producto.imprimirDatos() + "\n" );
+        /* if( this.#carritoCompras.length > 0){
             for (let producto of this.#carritoCompras){
                 listadoProductos += `
                 UUID:\t${producto.uuid}
@@ -38,7 +40,7 @@ class Usuario {
                 Precio:\t${producto.precio}
                 `;
             } 
-        }
+        } */
            
         const obtenerDatos = 
         `=====DATOS DEL USUARIO=====

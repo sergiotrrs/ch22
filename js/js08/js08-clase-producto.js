@@ -8,13 +8,13 @@ class Producto {
     #nombre;
     #precio;
     #uuid;
-    #createAt;
+    #createdAt;
 
     constructor(nombre, precio, uuid){
         this.#nombre = nombre;
         this.#precio = precio;
         this.#uuid = uuid;
-        this.#createAt = new Date();
+        this.#createdAt = new Date();
     }
 
     //Para dar acceso a los atributos encapsulados, usamos
@@ -50,6 +50,12 @@ class Producto {
             throw `La longitud es menor a ${longitudMinima} caracteres`;
     }
     
+    imprimirDatos(){
+        return `
+        UUID : ${this.uuid}
+        Nombre: ${this.nombre}
+        Precio: ${this.precio}`;
+    }
     //Realizar los setters and getters del resto de atributos
 
 
@@ -63,10 +69,23 @@ class ProductoElectronico extends Producto{
         //Super() hace referencia al constructor de la clase padre
         super(nombre, precio, uuid);
         this.#diasParaGarantia = diasParaGarantia;        
-    }
+    }    
 
     //agregar el set and get de diasParaGarantia.
+    set diasParaGarantia( dias ){
+        this.#diasParaGarantia = dias;
+    }
 
+    get diasParaGarantia(){
+        return this.#diasParaGarantia;
+    }
+
+    //Sobreescritura(overriding) de métodos
+    imprimirDatos(){
+        return super.imprimirDatos() + `
+        Garantia: ${this.diasParaGarantia}
+        `;
+    }
 
 }
 
