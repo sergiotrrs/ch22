@@ -1,4 +1,4 @@
-import { Usuario } from './js08-clases.js';
+import { Usuario, datoJson, productosTemporada } from './js08-clases.js';
 import { Producto, ProductoElectronico } from './js08-clase-producto.js';
 
 //Instanciar un objeto
@@ -54,3 +54,20 @@ const grabadora = new ProductoElectronico(
 karlaArena.agregarProductoACarrito( grabadora);
 
 console.log(karlaArena.imprimirDatos());
+/*
+fetch()
+    .then( response => response.json()  )
+    .catch();
+*/
+ console.log(  JSON.parse( datoJson) );
+
+ //ToDo cambiar esta línea por la FETCH API
+ const productosPagInicio = JSON.parse(productosTemporada); 
+ console.log(productosPagInicio);
+
+ productosPagInicio.forEach( producto => 
+    console.log( `En venta ${producto.nombre} a $${producto.precio}`));
+
+
+localStorage.setItem("productos-inio",  JSON.stringify(productosPagInicio));//Objecto->JSON
+localStorage.setItem("fecha-caducidad", (new Date().getTime()) + 60_000 );

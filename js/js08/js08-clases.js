@@ -56,4 +56,39 @@ class Usuario {
 
 }
 
-export { Usuario };
+
+const datoJson = `{
+    "name":"morpheus",
+    "job":"leader",
+    "skills":[
+       "KunFu",
+       "Capitan"
+    ],
+    "tripulacion":{
+       "operador":"Tanque",
+       "elegido":"Neo"
+    },
+    "vivo":true,
+    "edad":45
+ }`;
+
+ const productosTemporada = `
+ [
+  {
+    "nombre" : "Pantalón roto y pintado",
+    "precio" : 2500,
+    "imagen" : "http://mirepo.com/pantalon.jpg",
+    "descripcion": "Pantalón a la moda, roto por todos lados",
+    "tallas" : ["L","M","CH"]
+  },
+  {
+    "nombre" : "Sudadera",
+    "precio" : 300,
+    "imagen" : "http://mirepo.com/sudarea.jpg",
+    "descripcion": "Sudadera de NFL",
+    "tallas" : ["Unitalla"]
+  }
+ ]
+ `;
+
+export { Usuario, datoJson, productosTemporada };
