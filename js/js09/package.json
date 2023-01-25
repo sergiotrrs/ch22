@@ -1,0 +1,22 @@
+{
+  "name": "js09-npm",
+  "version": "1.1.0",
+  "description": "Uso de NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "axios",
+    "npm",
+    "unit-tests",
+    "html",
+    "css"
+  ],
+  "author": "Sergio Torres",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.4",
+    "bootstrap": "^5.3.0-alpha1"
+  }
+}
