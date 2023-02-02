@@ -172,7 +172,7 @@ public class Variables {
 		 
 		 System.out.println( (a && b) || (a&& c) ); //true
 		 System.out.println( a || b || c && a ); //true
-		 // el operador ! tiene preioridad respecto al operador && y ||
+		 // el operador ! tiene prioridad respecto al operador && y ||
 		 System.out.println( !(a || b) && (!a || c)   );// false
 		 // el operador && tiene prioridad respecto al operador ||
 		 System.out.println( a || b && c || a && b  );// true
@@ -180,7 +180,7 @@ public class Variables {
 		 // En Java ocurre una excepción al realizar un división por cero.
 		 //System.out.println( 5/0 );
 		   
-		 //Quiz
+		
 		 
 	
 	}
