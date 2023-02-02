@@ -40,6 +40,7 @@ public class EjercicioCalificaciones {
 	            System.out.println("Valor desconocido");
 	        }
 
+	       sc.close(); // Se cierra el recurso scanner
 	}
 
 }
