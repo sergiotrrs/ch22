@@ -108,19 +108,7 @@ public class FlujoControl {
 		
 		System.out.println("Holi " + myName + " de edad " + myAge + "años");
 		System.out.println("Con apellido: " + myLastname);
-		//System.out.println("Datos en buffer: " + buffer);
-		
-		/**
-		 * El objetivo del ejercicio es crear un sistema de calificaciones, como sigue:
-		 * El usuario proporcionará un valor entre 0 y 10 (usando Scanner). 
-		 * Si está entre 9 y 10: imprimir una A S
-		 * Si está entre 8 y menor a 9: imprimir una B 
-		 * Si está entre 7 y menor a 8: imprimir una C 
-		 * Si está entre 6 y menor a 7: imprimir una D 
-		 * Si está entre 0 y menor a 6: imprimir una F 
-		 * Cualquier otro valor debe imprimir: Valor desconocido.
-		 */
-		
+		//System.out.println("Datos en buffer: " + buffer);		
 		
 	}
 
