@@ -110,6 +110,7 @@ public class FlujoControl {
 		System.out.println("Con apellido: " + myLastname);
 		//System.out.println("Datos en buffer: " + buffer);		
 		
+		sc.close();
 	}
 
 }
