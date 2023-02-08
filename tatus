@@ -1,0 +1,49 @@
+[33mdc42015[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m ci: java08 colecciones
+[33m0dfec9a[m ci: java07 funciones
+[33maaf0f52[m ci: ciclo for
+[33m3c9cccf[m ci: switch case
+[33ma8dc03f[m ci: scanner.close()
+[33m0a43261[m ci: Ejercicio calificaciones
+[33m2653d24[m ci: scanner class
+[33m631b3d9[m ci: java 03, 05 y quiz
+[33m972cead[m ci: gitignore file
+[33mc2eb424[m feat: java 01-03
+[33m7b87ca0[m ci: axios con async y await
+[33m9299560[m ci:axios
+[33m561faf3[m[33m ([m[1;32mjest[m[33m)[m ci: getTime()
+[33ma69c63a[m ci: sobreescritura de metodos
+[33m2d46892[m ci: clases
+[33mf811bd8[m ci:solicitud http post
+[33m00b543a[m ci: fetch api
+[33ma58f29d[m ci: promesas
+[33m1d173dc[m ci: botones de start y stop
+[33m51885fc[m ci: setInterval
+[33m4bb1167[m ci: formulario bootstrap
+[33m76982f6[m ci: js06 uso del DOM
+[33m59438c9[m[33m ([m[1;32mjs05[m[33m)[m feat: operadores
+[33m898f967[m feat: sesion js05
+[33m968adbd[m ci: FIFO y LIFO
+[33m75233dd[m ci: brak and continue
+[33ma046c5c[m ci: arrays y ciclo for
+[33m5fd58ea[m feat: sesion js04
+[33m020423c[m[33m ([m[1;32mjs03[m[33m)[m refactor: se elimina la variable result
+[33mdff3d36[m fix: se resta una unidad a number
+[33maa49bf0[m refactor: operador ternario en factorial
+[33mf30b206[m ci: función factorial
+[33m098bd03[m ci: if, else if, switch
+[33mc2c8620[m feat: sesion js03
+[33m3889387[m ci: contador ascendente
+[33mb37bd0f[m feat: funciones
+[33mc0b2b5d[m ci: conversión de tipos de datos
+[33m30da66a[m feat: sesion js01
+[33m1e1955e[m ci: hange color by class name
+[33m5172b3f[m[33m ([m[1;31morigin/tituloh2[m[33m)[m feat: subtitulo h2
+[33maebd340[m fix: en titulo h1
+[33m80f1087[m ci: se agrega que honduras?
+[33m4f43fd4[m ci: modifica h1 hola mi gente
+[33m0ebb4b5[m Merge branch 'main' of github.com:sergiotrrs/ch22
+[33m3835d46[m ci: cambio de titulo
+[33m2874d9f[m ci: saludo con H1
+[33m5aa0aa0[m ci: nuevo titulo
+[33m233b2c9[m ci: estructura básica html
+[33mddd5474[m feat: inicio del proyecto

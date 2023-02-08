@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <link rel="stylesheet" href="../css/contacto.css" /> -->
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header></header>
+    <br />
+
+    <div class="contacto-general">
+      <div class="contacto-form">
+        <!--contenedor solamente del form-->
+        <div class="form-titulo">
+          <h1>Queremos escucharte</h1>
+        </div>
+
+        <form m>
+          <!--aqui empieza el formulario-->
+
+          <fieldset>
+            <div class="datos-contacto">
+              <div class="username">
+                <label for="username"> <h3>Nombre completo</h3></label>
+                <input type="text" name="username" required />
+              </div>
+
+              <div class="email">
+                <label for="email"><h3>Email</h3></label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="eexample@correo.com"
+                />
+              </div>
+
+              <div class="asunto">
+                <label for="asunto"><h3>Asunto</h3></label>
+                <input type="text" name="asunto" required />
+              </div>
+            </div>
+
+            <div class="message col-6">
+              <label for="message"><h3>Cuéntanos:</h3></label>
+
+              <textarea
+                name="message"
+                id=""
+                rows="6"
+                required
+                placeholder="Tu mensaje es oro para nosotros"
+              ></textarea>
+            </div>
+            <div class="enviar-boton">
+              <button type="submit" onclick="sendEmail()" ethod="post">
+                Enviar
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <!--contenedor del form-->
+
+      <div class="contacto-img">
+        <!--espacio pa la piedra-->
+        <img src="../images/contacto/piedra1.png" alt="" />
+      </div>
+
+      <div class="container-redes">
+        <!--Comienzan los logos de redes sociales-->
+
+        <h1>Siguenos en nuestras redes</h1>
+        <div class="logos">
+          <div class="facebook">
+            <a href="https://www.facebook.com/"
+              ><img src="../images/contacto/logoface.png" alt=""
+            /></a>
+          </div>
+
+          <div class="instagram">
+            <a href="https://www.instagram.com/"
+              ><img src="../images/contacto/instagramlogo.png" alt=""
+            /></a>
+          </div>
+
+          <div class="youtube">
+            <a href="https://www.youtube.com/"
+              ><img src="../images/contacto/youtubelogo.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!--Termina contenedor de redes-->
+    </div>
+    <!--Termina el div general-->
+
+    <!-- <script src="../barra.js"></script> -->
+
+    <script src="enviar-email.js"></script>
+  </body>
+</html>

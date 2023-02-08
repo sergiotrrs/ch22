@@ -45,7 +45,7 @@ public class ArrayListConceptos {
 		nombreLibros.add("El extranjero");
 		nombreLibros.add("Un mundo feliz");
 		nombreLibros.add("El extranjero"); //elemento duplicado
-		nombreLibros.add("Los juegos del hambre");
+		nombreLibros.add(3,"Los juegos del hambre"); //Agregamos en un índice determinado
 		
 		//Iteramos los elementos de la colección:
 		for (int i = 0; i < nombreLibros.size() ; i++) {
@@ -63,7 +63,9 @@ public class ArrayListConceptos {
 		// Iterar con forEach
 		nombreLibros.forEach( libro-> System.out.println(libro) );
 		
-		
+		//Se pasa la referencia, es necesario usar el método
+		// clone() para que sean objetos independientes.
+		ArrayList<String> clonLibros = nombreLibros;
 		
 		
 
