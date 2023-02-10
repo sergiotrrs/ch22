@@ -10,6 +10,7 @@ public class Banco {
 	private ArrayList<CajeroEncapsulado> cajeros;
 	private static String nombreBanco;
 	private static int contadorBanco;
+	//private HashMap< id , Empleado >;
 	
 	static {
 		nombreBanco = "PaxNorte";
