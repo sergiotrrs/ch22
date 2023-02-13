@@ -34,10 +34,31 @@ public class Empleado {
 	public Empleado(String nombre, String numSeguroSocial, String rfc) {
 		//La llamada a otro contructor debe ser en la primera línea.	
 		this(nombre);   //this.nombre = nombre;
-		                //this.id = ++contadorEmpleado;
+		//this.id = ++contadorEmpleado;
 		this.numSeguroSocial = numSeguroSocial;
 		this.rfc = rfc;
 	}
+	
+	public String saludo() {
+		return "Hola, soy " + this.nombre;  
+	}
+	
+	public String saludo(String titulo) {
+		return "Hola, soy "+ titulo + " " + this.nombre;
+	}
+
+	/**
+	 * Muestra el nombre del trabajador con su apelativo y si trabaj por las noches
+	 * @param apelativo
+	 * @param turnoNocturno
+	 * @return mensaje del trabajador
+	 */
+	public String saludo(String apelativo, boolean turnoNocturno) {
+		return "Hola, soy "+ this.nombre + 
+				" y me llaman de cariño " + apelativo +
+				(turnoNocturno? " y trabajo en las noches" : "") ;
+	}
+	
 	
 
 	public String getNombre() {
