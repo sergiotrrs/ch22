@@ -5,6 +5,7 @@ import java.util.List;
 
 import mascota.Mascota;
 
+
 public class AnimalTest {
 
 	public static void main(String[] args) {
@@ -34,6 +35,12 @@ public class AnimalTest {
 		//animales.forEach( animal -> System.out.println(reproducirSonido(animal) ) );
 		for (Animal animal : animales)
 			System.out.println( reproducirSonido(animal) );
+		
+		// Se puede referencias de una clase padre o interfaz
+		Mascota kraken = new Perro("Kraken", "Guuuauuu");
+		Mascota ChiquitinPeluche = new PerroPeluche();
+		List <Mascota> mascotas = new ArrayList<>();
+		
 		
 	}
 	
