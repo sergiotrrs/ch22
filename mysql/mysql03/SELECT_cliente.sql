@@ -12,7 +12,7 @@ SELECT COUNT(idsucursal) FROM cliente
 
 -- mostrar nombre, apellido, email y días de edad
 SELECT nombre as "name", apellido as "lastname", email,
-	DATEDIFF( "2023-02-15"  , fecha_nacimiento ) AS "days_of_live"  -- dias
+	DATEDIFF( "2023-02-15"  , fecha_nacimiento ) AS "days_of_life"  -- dias
 	FROM cliente;
 -- mostrar nombre, apellido, email y años de edad
 SELECT nombre as "name", apellido as "lastname", email,
