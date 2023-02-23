@@ -1,9 +1,16 @@
 package org.generation.app.entity;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Empleado {
 	private Integer id;
 	private String nombre;
 	private String puesto;
+	
+	public Empleado() {
+		
+	}
 	
 	public Empleado(Integer id, String nombre, String puesto) {
 		super();
