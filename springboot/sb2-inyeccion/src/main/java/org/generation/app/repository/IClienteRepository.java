@@ -6,7 +6,7 @@ public interface IClienteRepository {
 	
 	public String getClienteByEmail(String email);
 	
-	public String getClienteById(String id);
+	public String getClienteById(int id);
 	
 	public String getClienteByNombre(String nombre);
 }
