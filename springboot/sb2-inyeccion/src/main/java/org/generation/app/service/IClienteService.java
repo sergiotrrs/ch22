@@ -1,9 +1,13 @@
 package org.generation.app.service;
 
+import org.generation.app.entity.Customer;
+
 public interface IClienteService {
 	
-	public String getClienteById(int id);
+	public Customer getClienteById(long id);
 	
-	public String getClienteByEmail(String email);
+	public Customer getClienteByEmail(String email);
+	
+	public String setCliente(Customer customer);
 
 }

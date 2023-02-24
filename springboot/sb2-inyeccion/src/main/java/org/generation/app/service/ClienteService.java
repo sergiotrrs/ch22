@@ -1,27 +1,35 @@
 package org.generation.app.service;
 
 
-import org.generation.app.repository.IClienteRepository;
+import org.generation.app.entity.Customer;
+import org.generation.app.repository.ICustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 @Service
 public class ClienteService implements IClienteService {
 
 	@Autowired
-	IClienteRepository clienteRepository;  
+	ICustomerRepository clienteRepository;  
 		
 	@Override
-	public String getClienteById(int id) {
+	public Customer getClienteById(long id) {
 		//Solicitar de la DB
 		//ToDo Sanitizar el dato entrada		
-		return clienteRepository.getClienteById(id);
+		return clienteRepository.findById(id);
 	}
 
 	@Override
-	public String getClienteByEmail(String email) {
+	public Customer getClienteByEmail(String email) {
 		//ToDo sanitizar los caracteres, que no se entregue !"#$%&/()
-		return clienteRepository.getClienteByEmail(email);
+		return clienteRepository.findByEmail(email);
+	}
+	
+	@Override
+	public String setCliente(Customer customer) {
+		clienteRepository.save(customer);
+		return "Cliente guardado";
 	}
 
 }
