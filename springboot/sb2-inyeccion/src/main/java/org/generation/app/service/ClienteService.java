@@ -28,8 +28,8 @@ public class ClienteService implements IClienteService {
 	
 	@Override
 	public String setCliente(Customer customer) {
-		clienteRepository.save(customer);
-		return "Cliente guardado";
+		Customer newCustomer = clienteRepository.save(customer);
+		return "Cliente guardado con id " + newCustomer.getIdCustomer();
 	}
 
 }
